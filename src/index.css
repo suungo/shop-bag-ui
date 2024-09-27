@@ -1,0 +1,116 @@
+:root {
+  --text-color: #291b1b;
+  --color-red: hsla(0, 87%, 55%, 0.8);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.width-screen {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li,a {
+  text-decoration: none;
+}
+
+/* header */
+
+header {
+  height: 40px;
+  background-color: rgba( 0, 255, 230, 0.4);
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  margin-top: 6px;
+}
+
+.logo h1:first-child {
+  margin-right: 0;
+  color: #15de1b;
+}
+
+.logo h1:last-child {
+
+}
+
+.navbar-list {
+  font-size: 1.8rem;
+  margin-top: 6px;
+  margin-left: auto;
+}
+
+.navbar-list .home, .hand-bag, .account {
+  padding-left: 20px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.navbar-list> .home:hover, .hand-bag:hover, .account:hover {
+  color: var(--color-red);
+}
+
+.account {
+  position: relative;
+}
+
+.account:hover .account-list{
+  color: none;
+}
+
+
+.account-list {
+  font-size: 1.5rem;
+  width: 140px;
+  height: 90px;
+  background-color: rgb(226, 219, 219);
+  margin-top: 10px;position: absolute;
+  left: -13px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.account-list-all {
+  margin: 7px 8px;
+}
+
+.account-list-all li {
+  margin-bottom: 6px;
+}
+
+/* main */
+
+/* footer */
